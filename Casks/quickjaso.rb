@@ -1,6 +1,6 @@
 cask "quickjaso" do
   version "1.0.0"
-  sha256 "4fe4a26b70f5d50d278fde6b56188f7c7319db3afcae0d0972af3f0dd2a7ee96"
+  sha256 "c0491c7a7c929e79d7eb3f02de7c1fef15d10ff82c95c74065bba4507904281f"
 
   url "https://github.com/hungryZoo/quickJaso/releases/download/v#{version}/quickJaso-#{version}.dmg"
   name "quickJaso"
