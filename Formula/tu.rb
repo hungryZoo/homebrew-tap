@@ -1,20 +1,17 @@
 # typed: false
 # frozen_string_literal: true
 
-# Homebrew formula for `tu`.
-#
-# Mirror of Formula/tu.rb in https://github.com/hungryZoo/tu. Users
-# can install with:
+# Homebrew formula for `tu` (https://github.com/hungryZoo/tu).
 #
 #   brew tap hungryZoo/tap
 #   brew install hungryZoo/tap/tu
 #
-# Bottles are not built; the formula points straight at the
-# pre-compiled binaries that are attached to every GitHub release.
+# The url/sha256 pairs are rewritten automatically by the `release`
+# workflow in hungryZoo/tu on every tagged release. No bottles; each
+# url points at a pre-compiled binary attached to the GitHub release.
 class Tu < Formula
   desc "Tiny TUI menu on top of tmux"
   homepage "https://github.com/hungryZoo/tu"
-  version "1.1.1"
   license "MIT"
 
   depends_on "tmux"
