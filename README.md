@@ -7,7 +7,20 @@ hungryZoo의 Homebrew tap입니다. Homebrew 6 기준입니다.
 | [quickjaso](Casks/quickjaso.rb) | macOS Finder 서비스로 파일·폴더 이름을 Windows 호환 Unicode NFC로 검사·변환 — https://github.com/hungryZoo/quickJaso |
 | [everydock](Casks/everydock.rb) | 모든 모니터에 항상 표시되는 macOS 앱 바 — https://github.com/hungryZoo/everyDock |
 
-## 설치
+| Formula | 설명 |
+|---|---|
+| [tu](Formula/tu.rb) | tmux 세션 메뉴 TUI (macOS / Linux) — https://github.com/hungryZoo/tu |
+
+## tu 설치
+
+```sh
+brew tap hungryZoo/tap
+brew install hungryZoo/tap/tu
+```
+
+`tmux`는 의존성으로 함께 설치됩니다. 업데이트는 `brew update && brew upgrade tu`.
+
+## quickJaso 설치
 
 ```sh
 brew tap hungryZoo/tap

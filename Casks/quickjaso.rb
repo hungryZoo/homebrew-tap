@@ -4,12 +4,14 @@ cask "quickjaso" do
 
   url "https://github.com/hungryZoo/quickJaso/releases/download/v#{version}/quickJaso-#{version}.dmg"
   name "quickJaso"
-  desc "Finder service that inspects and converts file names to Unicode NFC for Windows compatibility"
+  desc "Finder service to check and convert file names to Unicode NFC for Windows"
   homepage "https://github.com/hungryZoo/quickJaso"
 
   depends_on macos: :ventura
 
   app "quickJaso.app"
+
+  zap trash: "~/Library/Preferences/com.heonzoo.quickJaso.plist"
 
   caveats <<~EOS
     quickJaso is ad-hoc signed and not notarized, so macOS Gatekeeper will
@@ -17,8 +19,4 @@ cask "quickjaso" do
       xattr -dr com.apple.quarantine "#{appdir}/quickJaso.app"
     or open System Settings > Privacy & Security and click "Open Anyway".
   EOS
-
-  zap trash: [
-    "~/Library/Preferences/com.heonzoo.quickJaso.plist",
-  ]
 end
