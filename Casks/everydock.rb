@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 cask "everydock" do
-  version "0.3.10"
-  sha256 "dd7544afae068c08d655a891ae79795be330b385ca1b39c32926d65b865e2a49"
+  version "0.4.0"
+  sha256 "e891f63b7e006ecb5fedd2661af98a649afc6a4ab3078d308984ac6d06e10772"
 
   url "https://github.com/hungryZoo/everyDock/releases/download/v#{version}/everyDock-#{version}-arm64.zip"
   name "everyDock"
