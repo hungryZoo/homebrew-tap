@@ -20,6 +20,14 @@ cask "everydock" do
 
   uninstall quit: "app.everydock.mac"
 
+  # Only opt-in cleanup removes app preferences, including first-run completion.
+  # Keep native Dock recovery journals until the app has restored those settings.
+  zap trash: [
+    "~/Library/Caches/app.everydock.mac",
+    "~/Library/Preferences/app.everydock.mac.plist",
+    "~/Library/Saved Application State/app.everydock.mac.savedState",
+  ]
+
   caveats do
     unsigned_accessibility
     <<~EOS
@@ -32,6 +40,9 @@ cask "everydock" do
       remove its old entries in Privacy & Security, then add the current app.
       Quit everyDock before upgrading or uninstalling to restore the system Dock.
       Preferences and recovery journals are preserved on uninstall.
+      Use brew uninstall --cask --zap everydock to remove preferences and first-run state.
+      macOS privacy decisions and native Dock recovery journals are not reset by zap.
+      Disable login launch in everyDock settings before a clean uninstall.
     EOS
   end
 end
