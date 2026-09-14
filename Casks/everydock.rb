@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 cask "everydock" do
-  version "0.4.0"
-  sha256 "e891f63b7e006ecb5fedd2661af98a649afc6a4ab3078d308984ac6d06e10772"
+  version "0.4.1"
+  sha256 "19d52c67d5f55cd674652775d5481e716edbb4e8fc06688519bdaa2e669076d9"
 
   url "https://github.com/hungryZoo/everyDock/releases/download/v#{version}/everyDock-#{version}-arm64.zip"
   name "everyDock"
@@ -19,7 +19,6 @@ cask "everydock" do
   app "everyDock.app"
 
   # Runtime command inspection must distinguish removal from upgrade; serialized steps cannot do this.
-  # rubocop:disable Cask/InstallSteps
   uninstall_preflight do
     # Homebrew also runs flight blocks during upgrade. Only explicit removal or
     # reinstall resets settings; unknown commands preserve them.
@@ -33,16 +32,14 @@ cask "everydock" do
       raise "Quit everyDock before resetting its settings." if running.exit_status.zero?
 
       system_command "/usr/bin/defaults", args: ["delete", "app.everydock.mac"], must_succeed: false
-      FileUtils.rm_rf [
+      FileUtils.rm_r [
         "#{Dir.home}/Library/Caches/app.everydock.mac",
         "#{Dir.home}/Library/Saved Application State/app.everydock.mac.savedState",
-      ]
+      ], force: true
     end
   end
 
   uninstall quit: "app.everydock.mac"
-
-  # rubocop:enable Cask/InstallSteps
 
   # Also support cleanup of leftovers after the app bundle is already absent.
   # Keep native Dock recovery journals until the app has restored those settings.
