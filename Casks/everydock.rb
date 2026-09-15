@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 cask "everydock" do
-  version "0.4.1"
-  sha256 "19d52c67d5f55cd674652775d5481e716edbb4e8fc06688519bdaa2e669076d9"
+  version "1.0.0"
+  sha256 "8daa33871c4c9ae96b35cbda516d6ac1c1c25428815036aeaeee89a7ca88e3b2"
 
   url "https://github.com/hungryZoo/everyDock/releases/download/v#{version}/everyDock-#{version}-arm64.zip"
   name "everyDock"
@@ -10,7 +10,7 @@ cask "everydock" do
   homepage "https://github.com/hungryZoo/everyDock"
 
   livecheck do
-    skip "Public beta; releases are reviewed before updating this tap"
+    skip "Releases are reviewed before updating this tap"
   end
 
   depends_on arch: :arm64
@@ -52,7 +52,7 @@ cask "everydock" do
   caveats do
     unsigned_accessibility
     <<~EOS
-      This is an ad-hoc signed public beta without Apple notarization.
+      This app is ad-hoc signed without Apple notarization.
       If macOS blocks first launch, review the source and approve it in
       System Settings > Privacy & Security > Open Anyway.
       Accessibility permission enables window control; Screen Recording
