@@ -18,23 +18,23 @@ class Tu < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/hungryZoo/tu/releases/download/v1.1.6/tu-1.1.6-aarch64-apple-darwin.tar.gz"
-      sha256 "9200c3345ac37188b28906237b13ff416f7e09345a2c336aa1af76ef9a208272"
+      url "https://github.com/hungryZoo/tu/releases/download/v1.1.7/tu-1.1.7-aarch64-apple-darwin.tar.gz"
+      sha256 "6e9ec99910dd7b18f6dd8014f8a9dd1591ade089cad7a168030ec742a4830753"
     end
     on_intel do
-      url "https://github.com/hungryZoo/tu/releases/download/v1.1.6/tu-1.1.6-x86_64-apple-darwin.tar.gz"
-      sha256 "84171e6d957bfae36fa165ebf5c7a794a085570120d337199732a744de1ac170"
+      url "https://github.com/hungryZoo/tu/releases/download/v1.1.7/tu-1.1.7-x86_64-apple-darwin.tar.gz"
+      sha256 "90a5b09fe9a2794f01eba8e858ec5eb7c460bd3f85e14bd358ef3a6f71400c2e"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/hungryZoo/tu/releases/download/v1.1.6/tu-1.1.6-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "9ddb6100ae70f3a76d349a95fe1dc600adb493e8f95431c15ae04e6d669e4b0c"
+      url "https://github.com/hungryZoo/tu/releases/download/v1.1.7/tu-1.1.7-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "31ab427c6a32ef779a4549971d396f415913d9fd029b31691455fccf67d2925f"
     end
     on_intel do
-      url "https://github.com/hungryZoo/tu/releases/download/v1.1.6/tu-1.1.6-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "9c1ad5f34218c8c42eb4b4425ddfe9376311d259d4640885ab8ec973cc6e6224"
+      url "https://github.com/hungryZoo/tu/releases/download/v1.1.7/tu-1.1.7-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "b21e0f2e851ab443a97e8f032a5f5f7ee61492bca79d22afadabe87c58860cc1"
     end
   end
 
