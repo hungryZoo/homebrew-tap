@@ -6,6 +6,7 @@ hungryZoo의 Homebrew tap입니다. Homebrew 6 기준입니다.
 |---|---|
 | [quickjaso](Casks/quickjaso.rb) | macOS Finder 서비스로 파일·폴더 이름을 Windows 호환 Unicode NFC로 검사·변환 — https://github.com/hungryZoo/quickJaso |
 | [everydock](Casks/everydock.rb) | 모든 모니터에 항상 표시되는 macOS 앱 바 — https://github.com/hungryZoo/everyDock |
+| [thebestdisplay](Casks/thebestdisplay.rb) | macOS 디스플레이 설정과 연결 진단 앱 — https://github.com/hungryZoo/TheBestDisplay |
 
 | Formula | 설명 |
 |---|---|
