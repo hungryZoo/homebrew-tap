@@ -11,6 +11,15 @@ hungryZoo의 Homebrew tap입니다. Homebrew 6 기준입니다.
 | Formula | 설명 |
 |---|---|
 | [tu](Formula/tu.rb) | tmux 세션 메뉴 TUI (macOS / Linux) — https://github.com/hungryZoo/tu |
+| [sshtui](Formula/sshtui.rb) | 시스템 ssh를 실행하는 SSH 호스트 관리 TUI (macOS / Linux) — https://github.com/hungryZoo/sshtui |
+
+## sshtui 설치
+
+```sh
+brew install hungryZoo/tap/sshtui
+```
+
+OpenSSH 클라이언트(`ssh`)가 필요합니다. 업데이트는 `brew update && brew upgrade hungryZoo/tap/sshtui`.
 
 ## tu 설치
 
