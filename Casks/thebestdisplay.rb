@@ -1,6 +1,6 @@
 cask "thebestdisplay" do
-  version "1.0.2"
-  sha256 "33967ca3a5d547beb8390cc6e9b43534d51f4cf52b9400365786c6d466554265"
+  version "1.0.3"
+  sha256 "8a581119a03df6377e49a66bd12a43b66c1e4310f3a895f8335b920285662bab"
 
   url "https://github.com/hungryZoo/TheBestDisplay/releases/download/v#{version}/TheBestDisplay-#{version}.dmg"
   name "TheBestDisplay"
